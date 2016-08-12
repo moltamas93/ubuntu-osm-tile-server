@@ -90,6 +90,8 @@ VOLUME ["/data"]
 #ENV DAEMON=/usr/local/bin/$NAME
 #ENV DAEMON_ARGS="-c /usr/local/etc/renderd.conf"
 
+
+
 COPY ./docker-entrypoint.sh /
 RUN chmod +x docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
